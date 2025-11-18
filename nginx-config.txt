@@ -1,0 +1,23 @@
+# Nginx server block for carzinfoforallz.online
+# Save this on server as /etc/nginx/sites-available/carzinfoforallz.online
+
+server {
+    listen 80;
+    server_name carzinfoforallz.online www.carzinfoforallz.online 13.203.229.130;
+
+    root /var/www/carzinfoforallz.online;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php-fpm.sock;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
