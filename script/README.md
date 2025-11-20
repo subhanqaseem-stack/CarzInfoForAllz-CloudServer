@@ -1,22 +1,25 @@
-# Car data script
+# Car Data Script – `car-data-api.js`
 
 ## Purpose
-Fetches car specifications for a given model (API Ninjas).
 
-## How to run (on server)
-1. Install Node.js (v18):
-   curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-   sudo apt install -y nodejs
+This Node.js script prints simple sample information about selected car models. It demonstrates the use of a script alongside the website and has a clear, verifiable output on the server.
 
-2. Place `car-data-api.js` in `~/car-scripts/` or run directly from repo.
+## How It Works
 
-3. Run:
-   node car-data-api.js civic
+- The script defines a small in-memory object containing:
+  - Brand
+  - Power (approximate horsepower)
+  - Type (sedan, SUV, sports, etc.)
 
-## Example output
----- Car Info ----
-Make: Honda
-Model: Civic
-Year: 2016
-Fuel Type: petrol
-Horsepower: 158
+- The user runs the script with a car model name (e.g. `civic`) and the script prints out the matching information.
+
+## How to Run (on the server)
+
+1. Connect to the EC2 instance via SSH.
+
+2. Make sure Node.js is installed:
+
+   ```bash
+   node -v
+Car Information:
+{ brand: 'Honda', power: '158 hp', type: 'Sedan' }
