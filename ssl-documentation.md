@@ -1,13 +1,11 @@
-# SSL/TLS documentation
+# SSL / TLS Documentation
 
-Commands to install certbot and obtain certificate:
-- sudo apt update
-- sudo apt install -y certbot python3-certbot-nginx
-- sudo certbot --nginx -d carzinfoforallz.online -d www.carzinfoforallz.online
+**Certificate Provider:** Let’s Encrypt  
+**Tool:** Certbot (with Nginx plugin)
 
-Add screenshots:
-- `screenshots/certbot-output.png`
-- `screenshots/site-https.png`
+## Commands Used
 
-Test renewal:
-- sudo certbot renew --dry-run
+```bash
+sudo apt update
+sudo apt install -y certbot python3-certbot-nginx
+sudo certbot --nginx -d carzinfoforallz.online -d www.carzinfoforallz.online
