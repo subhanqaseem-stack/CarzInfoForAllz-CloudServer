@@ -5,6 +5,7 @@
 
 **Domain:** https://carzinfoforallz.online  
 **Server IP:** 13.203.229.130  
+**Video Link** https://youtu.be/sVjtYN-yHN0
 
 ---
 
@@ -92,13 +93,10 @@ More detail is provided in the separate documentation files in this repository.
 
 ## Video Explainer
 
-A short (3–5 minute) video demonstrates:
-
 - The running EC2 instance  
 - WordPress website at https://carzinfoforallz.online  
 - HTTPS padlock / site info  
 - The terminal showing the Node.js script output  
 - This GitHub repository  
 
-(Video link will be placed here once recorded.)
 
